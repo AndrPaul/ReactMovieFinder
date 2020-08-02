@@ -1,0 +1,177 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+	min-height: 90vh;
+	background: #f8f8f8d5;
+	border-radius: 5px;
+	position: relative;
+	overflow-y:  scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+	&::-webkit-scrollbar {
+		display: none;
+	}
+  }
+.detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #343838c4;
+  .title1 {
+    color: white;
+    font-size: 44px;
+    margin-bottom: 13px;
+    span {
+      background: #c4af3d;
+      border-radius: 5px;
+      color: #544c21;
+      font-size: 14px;
+      padding: 0px 4px;
+    }
+  }
+
+  .title2 {
+    color: #c7c1ba;
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  .likes {
+    margin-top: 15px;
+    &:before {
+      content: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/heart-icon.png");
+      position: relative;
+      top: 2px;
+      padding-right: 7px;
+    }
+  }
+}
+
+
+.movie-card {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  color: #f7f7f7;
+  margin-top: 5vh;
+
+  .description {
+	  position: absolute;
+	  background-color: rgba(255, 255, 255, 0.514);
+	  width: 100%;
+	  top: 341px;
+	  
+
+	  .col1 {
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: space-between;
+		  min-height: 320px;
+		  padding:30px  0px 30px 300px;
+		  width: 60%;
+		  color: $mainColor;
+		  h3{
+			span{
+				
+				font-weight: normal;
+			}
+		  }
+		  
+		 button{
+			  padding: 12px;
+			  background-color: $secondColor;
+			  color: white;
+			  text-transform: uppercase;
+			  text-decoration: none;
+			  width: 120px;
+			  font-weight: bold;
+			  letter-spacing: 2px;
+			  margin-top: 15px;
+			  text-align: center;
+			  border-radius: 2px;
+			  border: none;
+			  &:hover{
+				  background-color: lighten($secondColor, 10%);
+				  cursor: pointer;
+			  }
+		  }
+	  }
+	  .col2 {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  flex-direction: column;
+		  color: white;
+		  max-width: 100%;
+		  padding-top: 10vh;
+		  padding-bottom: 10vh;
+		  background-color: $secondColor;
+		 
+
+		  h3{
+			font-family: $title;
+			font-size: 40px;
+			margin-bottom: 50px;
+			font-weight: 500;
+			letter-spacing: 2px;
+			
+		  }
+	  }
+  }
+}
+
+.hero {
+  height: 342px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  padding-left: 300px;
+  padding-top: 170px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  @include background;
+}
+
+.cover {
+  position: absolute;
+  top: 160px;
+  left: 40px;
+  z-index: 2;
+}
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+ 
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  opacity: 0.7;
+  z-index: 1;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+
+  &:hover {
+	opacity: 1;
+  }
+  
+}

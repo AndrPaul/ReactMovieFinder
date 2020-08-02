@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+//COLORS
+$mainColor: #0E0F0F;
+$secondColor : #21272B;
+//FONTS
+$title : 'Staatliches', cursive;
+
+@mixin background {
+  background: $mainColor;
+  background: url(../images/background.png) no-repeat 0 0,-webkit-linear-gradient(top, $mainColor, $secondColor);
+  background: url(../images/background.png) no-repeat 0 0,-moz-linear-gradient(top, $mainColor, $secondColor);
+  background: url(../images/background.png) no-repeat 0 0, linear-gradient(to bottom, $mainColor, $secondColor);
+ background-position: top;
+ 
+}
+
+

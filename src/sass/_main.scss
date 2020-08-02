@@ -1,0 +1,92 @@
+body {
+  min-height: 100vh;
+  @include background;
+  
+}
+
+
+.box {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movieBox {
+  display: flex;
+  height: 330px;
+  width: 220px;
+  margin: 15px;
+  position: relative;
+  button {
+    border: none;
+  }
+  &:hover .overlay {
+    opacity: 1;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s ease;
+    background-color: rgba($secondColor, 0.8);
+    cursor: pointer;
+  }
+  &:hover {
+    transition: transform 0.2s;
+    -ms-transform: translate(0px, -15px); /* IE 9 */
+    transform: translate(0px, -15px); /* Standard syntax */
+    
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1px;
+  }
+  .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  h1{
+    color:#fff;
+    font-size:70px;
+    font-weight:500;
+    text-align: center;
+    text-shadow: 0px 5px 0px rgba(255, 255, 255, 0.411);
+    margin-top: 10vh;
+    font-family: $title;
+    letter-spacing: 5px;
+    
+  }
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 90vw;
+  margin:0 auto;
+
+}
+

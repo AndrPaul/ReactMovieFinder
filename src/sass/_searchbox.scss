@@ -1,0 +1,40 @@
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.searchbox {
+  display: block;
+  min-width: 60%;
+  padding: 15px;
+  border: none;
+  text-align: center;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.473);
+  border-radius: 2px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.3 ease-out;
+  
+}
+::placeholder {
+  color: $mainColor;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $mainColor;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $mainColor;
+}
+.searchbox:focus {
+  transition: ease 0.3;
+  background-color: rgba(255, 255, 255, 0.822);
+}
