@@ -47,7 +47,11 @@ function MovieDetail({ selected, exitbutton, trailer }) {
 
                     <div className="hero" >
                         <div className="details">
-                            <h1 className="title1">{selected.original_title} <span>({selected.original_language.toUpperCase()})</span></h1>
+                            <div className="title1">
+                            <h1>{selected.original_title}</h1>
+                            <span>({selected.original_language.toUpperCase()})</span>
+                            </div>
+                            
                             <h2 className="title2">Categories: {getCategories(selected)}</h2>
 
                             <div className="rating">
@@ -59,7 +63,6 @@ function MovieDetail({ selected, exitbutton, trailer }) {
                     </div>
                     <div className="description">
                         <div className="col1">
-                            
                             <h3>Released: </h3>
                             <p>{selected.release_date}</p>
                             <h3>Budget:</h3>
@@ -70,7 +73,7 @@ function MovieDetail({ selected, exitbutton, trailer }) {
                         </div>
                         <div className="col2">
                             <h3>Trailer</h3>
-                            <ReactPlayer width="70%" height="500px" url={trailer} playing={false} style={{ border: "2px solid white" }} />
+                            <ReactPlayer className="reactPlayer" width="80%" height="500px"  url={trailer} playing={false} style={{ border: "2px solid white" }} />
                         </div>
                     </div>
                     <button onClick={() => exitbutton()} className="close" >X</button>

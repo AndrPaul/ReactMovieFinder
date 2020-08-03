@@ -15,6 +15,8 @@
 		display: none;
 	}
   }
+
+  
 .detail {
   position: fixed;
   top: 0;
@@ -22,34 +24,55 @@
   width: 100vw;
   height: 100vh;
   background: #343838c4;
-  .title1 {
-    color: white;
-    font-size: 44px;
-    margin-bottom: 13px;
-    span {
-      background: #c4af3d;
-      border-radius: 5px;
-      color: #544c21;
-      font-size: 14px;
-      padding: 0px 4px;
-    }
-  }
 
-  .title2 {
-    color: #c7c1ba;
-    font-size: 23px;
-    font-weight: 300;
-    margin-bottom: 15px;
+  .details {
+    position: absolute;
+      top: 170px;
+      left: 300px;
+      
+      .title1 {
+ 
+        position: relative;
+        color: white;
+        font-size: 25px;
+        margin-bottom: 13px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1;
+        span {
+          
+          background: #c4af3d;
+          border-radius: 5px;
+          color: #544c21;
+          font-size: 11px;
+          padding: 0px 5px;
+          text-align: center;
+          line-height: 1.6;
+          margin-left: 5px;
+          
+          
+        }
+      }
+    
+      .title2 {
+        color: #c7c1ba;
+        font-size: 23px;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+      .likes {
+        margin-top: 15px;
+        &:before {
+          content: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/heart-icon.png");
+          position: relative;
+          top: 2px;
+          padding-right: 7px;
+        }
+      }
+      
   }
-  .likes {
-    margin-top: 15px;
-    &:before {
-      content: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/heart-icon.png");
-      position: relative;
-      top: 2px;
-      padding-right: 7px;
-    }
-  }
+  
 }
 
 
@@ -62,16 +85,16 @@
 	  position: absolute;
 	  background-color: rgba(255, 255, 255, 0.514);
 	  width: 100%;
-	  top: 341px;
+	  top: 401px;
 	  
 
 	  .col1 {
 		  display: flex;
 		  flex-direction: column;
 		  justify-content: space-between;
-		  min-height: 320px;
+		  min-height: 400px;
 		  padding:30px  0px 30px 300px;
-		  width: 60%;
+		  width: 80%;
 		  color: $mainColor;
 		  h3{
 			span{
@@ -124,15 +147,16 @@
 }
 
 .hero {
-  height: 342px;
+  min-height: 400px;
+  padding-bottom: 35px;
   margin: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
-  padding-left: 300px;
-  padding-top: 170px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   @include background;
+
+  
 }
 
 .cover {
@@ -175,3 +199,4 @@ label {
   }
   
 }
+
