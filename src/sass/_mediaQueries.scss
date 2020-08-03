@@ -21,7 +21,7 @@
     height: 750px;
 
     .details {
-        top: 120px;
+      top: 120px;
       width: 90%;
       display: flex;
       flex-direction: column;
@@ -64,18 +64,15 @@
   }
 
   .detail {
-      .details{
-        .title1 {
-            
-             text-align: center;
-           
-           }
-       
-           .title2 {
-             font-size: 21px;
-             text-align: center;
-           }
+    .details {
+      .title1 {
+        text-align: center;
       }
-    
+
+      .title2 {
+        font-size: 21px;
+        text-align: center;
+      }
+    }
   }
 }

@@ -1,22 +1,21 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 .container {
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	width: 80vw;
-	min-height: 90vh;
-	background: #f8f8f8d5;
-	border-radius: 5px;
-	position: relative;
-	overflow-y:  scroll;
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
-	&::-webkit-scrollbar {
-		display: none;
-	}
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  min-height: 90vh;
+  background: #f8f8f8d5;
+  border-radius: 5px;
+  position: relative;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
   }
+}
 
-  
 .detail {
   position: fixed;
   top: 0;
@@ -27,54 +26,47 @@
 
   .details {
     position: absolute;
-      top: 170px;
-      left: 300px;
-      
-      .title1 {
- 
-        position: relative;
-        color: white;
-        font-size: 25px;
-        margin-bottom: 13px;
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.1;
-        span {
-          
-          background: #c4af3d;
-          border-radius: 5px;
-          color: #544c21;
-          font-size: 11px;
-          padding: 0px 5px;
-          text-align: center;
-          line-height: 1.6;
-          margin-left: 5px;
-          
-          
-        }
-      }
-    
-      .title2 {
-        color: #c7c1ba;
-        font-size: 23px;
-        font-weight: 300;
-        margin-bottom: 15px;
-      }
-      .likes {
-        margin-top: 15px;
-        &:before {
-          content: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/heart-icon.png");
-          position: relative;
-          top: 2px;
-          padding-right: 7px;
-        }
-      }
-      
-  }
-  
-}
+    top: 170px;
+    left: 300px;
 
+    .title1 {
+      position: relative;
+      color: white;
+      font-size: 25px;
+      margin-bottom: 13px;
+      display: flex;
+      
+      align-items: center;
+      line-height: 1.1;
+      span {
+        background: #c4af3d;
+        border-radius: 5px;
+        color: #544c21;
+        font-size: 11px;
+        padding: 0px 5px;
+        text-align: center;
+        line-height: 1.6;
+        margin-left: 5px;
+      }
+    }
+
+    .title2 {
+      color: #c7c1ba;
+      font-size: 23px;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+    .likes {
+      margin-top: 15px;
+      &:before {
+        content: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/heart-icon.png");
+        position: relative;
+        top: 2px;
+        padding-right: 7px;
+      }
+    }
+  }
+}
 
 .movie-card {
   font: 14px/22px "Lato", Arial, sans-serif;
@@ -82,67 +74,63 @@
   margin-top: 5vh;
 
   .description {
-	  position: absolute;
-	  background-color: rgba(255, 255, 255, 0.514);
-	  width: 100%;
-	  top: 401px;
-	  
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.514);
+    width: 100%;
+    top: 401px;
 
-	  .col1 {
-		  display: flex;
-		  flex-direction: column;
-		  justify-content: space-between;
-		  min-height: 400px;
-		  padding:30px  0px 30px 300px;
-		  width: 80%;
-		  color: $mainColor;
-		  h3{
-			span{
-				
-				font-weight: normal;
-			}
-		  }
-		  
-		 button{
-			  padding: 12px;
-			  background-color: $secondColor;
-			  color: white;
-			  text-transform: uppercase;
-			  text-decoration: none;
-			  width: 120px;
-			  font-weight: bold;
-			  letter-spacing: 2px;
-			  margin-top: 15px;
-			  text-align: center;
-			  border-radius: 2px;
-			  border: none;
-			  &:hover{
-				  background-color: lighten($secondColor, 10%);
-				  cursor: pointer;
-			  }
-		  }
-	  }
-	  .col2 {
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  flex-direction: column;
-		  color: white;
-		  max-width: 100%;
-		  padding-top: 10vh;
-		  padding-bottom: 10vh;
-		  background-color: $secondColor;
-		 
+    .col1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: px;
+      padding: 30px 0px 30px 300px;
+      width: 80%;
+      color: $mainColor;
+      h3 {
+        span {
+          font-weight: normal;
+        }
+      }
 
-		  h3{
-			font-family: $title;
-			font-size: 40px;
-			margin-bottom: 50px;
-			font-weight: 500;
-			letter-spacing: 2px;
-			
-		  }
-	  }
+      button {
+        padding: 12px;
+        background-color: $secondColor;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 120px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 15px;
+        text-align: center;
+        border-radius: 2px;
+        border: none;
+        &:hover {
+          background-color: lighten($secondColor, 10%);
+          cursor: pointer;
+        }
+      }
+    }
+    .col2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      max-width: 100%;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      background-color: $secondColor;
+
+      h3 {
+        font-family: $title;
+        font-size: 40px;
+        margin-bottom: 50px;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+    }
   }
 }
 
@@ -155,8 +143,6 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   @include background;
-
-  
 }
 
 .cover {
@@ -174,7 +160,6 @@ label {
 /****** Style Star Rating Widget *****/
 .rating {
   border: none;
- 
 }
 
 .close {
@@ -195,8 +180,6 @@ label {
   cursor: pointer;
 
   &:hover {
-	opacity: 1;
+    opacity: 1;
   }
-  
 }
-
