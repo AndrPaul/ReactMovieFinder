@@ -10,7 +10,22 @@
 
 Web application using React.js that let's you search for movies and finding all there is know about these movies including poster, rating, description, budget and trailer.
 
+## What to expect from this project 
+
+* Use of react functional components (hooks)
+* Fetching an API using - [Axios](https://www.npmjs.com/package/axios) 
+* Iterrating data from an API - [TMDb](https://developers.themoviedb.org/3/getting-started/introductions) 
+* Search trough the database
+* Clicking a movie poster opens a modal with all the information about the movie
+* Modern responsive interface
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Authors
+
+* **Paul Andrica** - [AndrPaul](https://github.com/AndrPaul)
+
 
 ## Available Scripts
 
@@ -78,4 +93,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# ReactMovieFinder
+
