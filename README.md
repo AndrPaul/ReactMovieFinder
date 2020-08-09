@@ -15,7 +15,7 @@ Web application using React.js that let's you search for movies and finding all 
 * Use of react functional components (hooks)
 * Fetching an API using - [Axios](https://www.npmjs.com/package/axios) 
 * Iterrating data from an API - [TMDb](https://developers.themoviedb.org/3/getting-started/introductions) 
-* Search trough the database
+* Searching trough the database
 * Clicking a movie poster opens a modal with all the information about the movie
 * Modern responsive interface
 
