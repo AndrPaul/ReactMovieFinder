@@ -1,3 +1,15 @@
+# React movie finder
+
+
+
+![react movie finder](https://i.imgur.com/roga1zZ.png)
+
+ [Live demo](https://react-movie-finder.vercel.app/) 
+
+## Description
+
+Web application using React.js that let's you search for movies and finding all there is know about these movies including poster, rating, description, budget and trailer.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
